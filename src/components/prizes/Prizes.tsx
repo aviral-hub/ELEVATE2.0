@@ -208,7 +208,7 @@ export default function Prizes() {
         </div>
       </div>
 
-      {tracks.length > 0 ? (
+      {/* {tracks.length > 0 ? (
         <>
           <Divider heading="Special Track Prizes" mt="70px" mb="70px" />
           <div className="w-full px-12 grid grid-cols-1 gap-7 mb-4 justify-center items-center sm:grid-cols-2 sm:grid-rows-3">
@@ -225,7 +225,7 @@ export default function Prizes() {
         </>
       ) : (
         <></>
-      )}
+      )} */}
     </section>
   );
 }

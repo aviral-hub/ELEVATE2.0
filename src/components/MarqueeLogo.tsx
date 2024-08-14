@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Marquee from "react-fast-marquee";
-import marquee from "@/app/DevsHouseMarquee.png";
+import marquee from "../../public/_ELEVATE_2.0___1_-removebg-preview.png";
 import Image from "next/image";
 import useWindowDimensions from "@/hooks/useWindowDimension";
 
@@ -21,9 +21,11 @@ const MarqueeLogo = () => {
   }, [windowDimensions]);
 
   return (
-    <div className="h-[50px] sm:h-[200px] sm:mt-[50px]">
+    <div className="h-[50px] sm:h-[200px] sm:mt-[50px] mt-[-12vh]">
       <div className="transform rotate-[5deg] absolute w-screen">
         <Marquee direction="right" className="bg-white p-2 border-black border-y-[8px]">
+          <Image src={marquee} alt={"marquee"} height={size} className="mx-24"></Image>
+          <Image src={marquee} alt={"marquee"} height={size} className="mx-24"></Image>
           <Image src={marquee} alt={"marquee"} height={size} className="mx-24"></Image>
           <Image src={marquee} alt={"marquee"} height={size} className="mx-24"></Image>
           <Image src={marquee} alt={"marquee"} height={size} className="mx-24"></Image>
@@ -32,6 +34,8 @@ const MarqueeLogo = () => {
       </div>
       <div className="transform rotate-[-5deg] absolute w-screen">
         <Marquee className="bg-white p-2 border-black border-y-[8px]">
+          <Image src={marquee} alt={"marquee"} height={size} className="mx-24"></Image>
+          <Image src={marquee} alt={"marquee"} height={size} className="mx-24"></Image>
           <Image src={marquee} alt={"marquee"} height={size} className="mx-24"></Image>
           <Image src={marquee} alt={"marquee"} height={size} className="mx-24"></Image>
           <Image src={marquee} alt={"marquee"} height={size} className="mx-24"></Image>

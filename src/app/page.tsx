@@ -32,7 +32,7 @@ export default function Home() {
       <MarqueeLogo />
       {/* <AboutPage /> */}
       <About2 />
-      <Tracks />
+      {/* <Tracks /> */}
       <Prizes />
 
       {/* <TimelineOnline /> */}
@@ -40,9 +40,9 @@ export default function Home() {
       {/*Hide until confirmed*/}
       {/* <Speakers /> */}
       <Ourteam />
-      <Sponsor />
-      <Community />
-      <FAQ />
+      {/* <Sponsor /> */}
+      {/* <Community /> */}
+      {/* <FAQ /> */}
       <Contact />
       <Footer2 />
     </div>
