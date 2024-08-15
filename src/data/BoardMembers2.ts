@@ -20,13 +20,13 @@ import WebDevelopment_Lead2 from "../public/Leads/WebDevelopment2.png";
 
 const boardMembers = [
   {
-    name: "Zahran Sajid",
-    image: OpenSource_Lead,
-    role: "Open Source Lead",
-    description: "Placeholder",
-    github: "https://github.com/zahransajid",
-    linkedIn: "https://www.linkedin.com/in/zahran-sajid/",
-    color: "#4b916c",
+    // name: "Zahran Sajid",
+    // image: OpenSource_Lead,
+    // role: "Open Source Lead",
+    // description: "Placeholder",
+    // github: "https://github.com/zahransajid",
+    // linkedIn: "https://www.linkedin.com/in/zahran-sajid/",
+    // color: "#4b916c",
   },
   {
     name: "Achintya Singh",

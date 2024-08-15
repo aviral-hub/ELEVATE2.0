@@ -19,7 +19,7 @@
   --brand-primary-rgb-value: 47, 112, 193;
   --brand-secondary-rgb-value: 116, 97, 195;
   --brand-alternative-rgb-value: 19, 120, 134;
-  --background-site-rgb-value: 249, 249, 249;
+  --background-site-rgb-value: rgb(0, 0, 0);
   --background-code-rgb-value: 244, 244, 244;
   --text-body-rgb-value: 54, 49, 61;
   --text-comment-rgb-value: 99, 94, 105;

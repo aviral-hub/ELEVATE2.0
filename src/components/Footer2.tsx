@@ -17,7 +17,7 @@ export default function Footer2() {
     <div className="grid grid-cols-1 md:grid-cols-4 gap-12 p-12 font-spaceGrotesk">
       <div className="relative md:col-span-2">
         <div className="relative">
-          <a href="https://devshouse-1.devfolio.co/" target="_blank">
+          {/* <a href="https://devshouse-1.devfolio.co/" target="_blank">
             <Image
               src={devshouseTicket}
               alt="Devshouse Ticket"
@@ -28,7 +28,7 @@ export default function Footer2() {
               alt="Devshouse Ticket"
               className="w-full object-cover transition-opacity duration-500"
             ></Image>
-          </a>
+          </a> */}
         </div>
       </div>
       <div className="flex flex-col gap-4 justify-start">
