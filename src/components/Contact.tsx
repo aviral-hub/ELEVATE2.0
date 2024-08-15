@@ -12,9 +12,11 @@ import { useForm } from "react-hook-form";
 import * as z from "zod";
 
 import { Space_Grotesk } from "next/font/google";
-import { Phone } from "lucide-react";
-import { Mail } from "lucide-react";
-import { MapPin } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
+
+// Import Firebase
+import { db } from "./../../firebase-config"; // Adjust this path based on your project structure
+import { collection, addDoc } from "firebase/firestore"; // Import necessary Firestore functions
 
 const space_grotesk = Space_Grotesk({
   weight: ["400", "700"],
@@ -43,33 +45,34 @@ const Contact = () => {
 
   const { toast } = useToast();
 
-  const handleSubmit = (values: z.infer<typeof formSchema>) => {
-    const formElement: HTMLElement | null = document.getElementById("contact-form");
-    console.log(formElement);
-    if (formElement instanceof HTMLFormElement) {
-      const formDatab = new FormData(formElement);
-      console.log(formDatab);
-      console.log(values);
-      fetch("/api/contact/post", {
-        method: "POST",
-        body: JSON.stringify(values),
-      })
-        .then((res) => {
-          console.log(res);
-          toast({
-            title: "Success",
-            description: "Your message has been sent.",
-          });
-        })
-        .catch((error) => {
-          console.error(error);
-          toast({
-            title: "Failed",
-            description: "Could not send the message! Retry...",
-          });
-        });
-    } else {
-      console.error("Form element not found or is not of type HTMLFormElement");
+  const handleSubmit = async (values: z.infer<typeof formSchema>) => {
+    try {
+      // Add form data to Firestore
+      await addDoc(collection(db, "contactMessages"), {
+        name: values.Name,
+        email: values.Email,
+        subject: values.Subject,
+        message: values.Message,
+        timestamp: new Date(),
+      });
+
+      // Display success message
+      toast({
+        title: "Success",
+        description: "Message sent successfully!",
+        status: "success", // You can customize the appearance using this status (e.g., 'success', 'error', etc.)
+      });
+
+      form.reset(); // Reset the form after successful submission
+    } catch (error) {
+      console.error(error);
+
+      // Display error message
+      toast({
+        title: "Error",
+        description: "An error occurred while sending your message.",
+        status: "error", // Customize the appearance with this status
+      });
     }
   };
 
@@ -131,61 +134,53 @@ const Contact = () => {
               <FormField
                 control={form.control}
                 name="Name"
-                render={({ field }) => {
-                  return (
-                    <FormItem>
-                      <FormControl>
-                        <Input className="text-black" placeholder="Your Name" type="name" {...field}></Input>
-                      </FormControl>
-                      <FormMessage></FormMessage>
-                    </FormItem>
-                  );
-                }}
-              ></FormField>
+                render={({ field }) => (
+                  <FormItem>
+                    <FormControl>
+                      <Input className="text-black" placeholder="Your Name" type="name" {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
               <FormField
                 control={form.control}
                 name="Email"
-                render={({ field }) => {
-                  return (
-                    <FormItem>
-                      <FormControl>
-                        <Input className="text-black" placeholder="Your Email" type="email" {...field}></Input>
-                      </FormControl>
-                      <FormMessage></FormMessage>
-                    </FormItem>
-                  );
-                }}
-              ></FormField>
+                render={({ field }) => (
+                  <FormItem>
+                    <FormControl>
+                      <Input className="text-black" placeholder="Your Email" type="email" {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
               <FormField
                 control={form.control}
                 name="Subject"
-                render={({ field }) => {
-                  return (
-                    <FormItem>
-                      <FormControl>
-                        <Input className="text-black" placeholder="Subject" type="subject" {...field}></Input>
-                      </FormControl>
-                      <FormMessage></FormMessage>
-                    </FormItem>
-                  );
-                }}
-              ></FormField>
+                render={({ field }) => (
+                  <FormItem>
+                    <FormControl>
+                      <Input className="text-black" placeholder="Subject" type="subject" {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
               <FormField
                 control={form.control}
                 name="Message"
-                render={({ field }) => {
-                  return (
-                    <FormItem>
-                      <FormControl>
-                        <Textarea className="text-black resize" placeholder="Message" {...field}></Textarea>
-                      </FormControl>
-                      <FormMessage></FormMessage>
-                    </FormItem>
-                  );
-                }}
-              ></FormField>
-              <Button type="submit" radius="xl" size="md" className={`button-50`}>
-                <span className={`${space_grotesk.className}`}>Send</span>
+                render={({ field }) => (
+                  <FormItem>
+                    <FormControl>
+                      <Textarea className="text-black resize" placeholder="Message" {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <Button type="submit" className="bg-black text-white">
+                Send Message
               </Button>
             </form>
           </Form>
