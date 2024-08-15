@@ -108,7 +108,7 @@ const AboutPage: React.FC = () => {
                     : {}),
                 }}
               >
-                VIT Chennai
+                Elevate
               </h2>
               <p
                 className={Work.className}
@@ -215,9 +215,7 @@ const AboutPage: React.FC = () => {
                     : {}),
                 }}
               >
-                GDSC VIT Chennai is a student run community group powered by Google Developers. We are a passionate
-                group of budding developers who work together to build solutions for local businesses and communities
-                with Google technology and promote healthy developer culture.
+                Elevate 1.0 by IEEE CS was a premier hackathon that brought together tech enthusiasts to solve real-time industry challenges. Participants had the unique opportunity to work closely with experienced mentors and receive feedback from esteemed judges, enhancing their skills and broadening their professional networks. The event was packed with engaging activities, including quizzes, interactive sessions, and a lively jamming session. Attendees also enjoyed exclusive goodies, making Elevate 1.0 not just a competition, but a memorable and enriching experience.
               </p>
             </div>
           </div>
