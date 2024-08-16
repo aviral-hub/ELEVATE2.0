@@ -46,7 +46,22 @@ export default function Community() {
         <h1 className={`text-5xl ${Space.className} text-white text-center mb-14`}>Community Partners</h1>
       </div>
       <Marquee>
-    
+        <Image src={img1} alt={"1"} height={200} width={300} className="mx-12"></Image>
+        {/* <Image src={img2} alt={"1"} height={200} width={300} className="mx-12"></Image> */}
+        <Image src={img4} alt={"1"} height={200} width={300} className="mx-12"></Image>
+        <Image src={img4} alt={"1"} height={200} width={300} className="mx-12"></Image>
+        <Image src={img5} alt={"1"} height={200} width={300} className="mx-12"></Image>
+        <Image src={img6} alt={"1"} height={200} width={300} className="mx-12"></Image>
+        <Image src={img7} alt={"1"} height={200} width={300} className="mx-12"></Image>
+        <Image src={img8} alt={"1"} height={200} width={300} className="mx-12"></Image>
+        <Image src={img9} alt={"1"} height={200} width={300} className="mx-12"></Image>
+        <Image src={img10} alt={"1"} height={200} width={300} className="mx-12"></Image>
+        <Image src={img11} alt={"1"} height={200} width={300} className="mx-12"></Image>
+        {/* <Image src={img12} alt={"1"} height={200} width={300} className="mx-12"></Image> */}
+        <Image src={img13} alt={"1"} height={200} width={300} className="mx-12"></Image>
+        <Image src={img14} alt={"1"} height={200} width={300} className="mx-12"></Image>
+        <Image src={img15} alt={"1"} height={200} width={300} className="mx-12"></Image>
+        <Image src={img16} alt={"1"} height={200} width={300} className="mx-12"></Image>
 
       </Marquee>
       <Marquee direction="right">
