@@ -62,12 +62,12 @@ const boardMembers = [
     type: "technical",
   },
   {
-    name: "i am everything",
-    image: "",
+    name: "Pravin sahu",
+    image: "/Leads/PravinSahu.jpg",
     role: "Web Dev Lead",
     description: "Turning caffeine and curiosity into coding masterpieces",
     github: "//",
-    linkedIn: "//",
+    linkedIn: "https://www.linkedin.com/in/pravin-sahu-634b80204?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     type: "technical",
   },
   {

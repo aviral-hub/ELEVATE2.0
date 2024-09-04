@@ -99,20 +99,20 @@ const Contact = () => {
                 <div>
                   <p>
                     <a target="_blank" rel="noopener noreferrer" href="tel:+91 9341405360">
-                      +91 9341405360
+                      +91 7020729200
                     </a>
                   </p>
                   <p>
                     <a target="_blank" rel="noopener noreferrer" href="tel:+91 9003065894">
-                      +91 9003065894
+                      +91 7263049920
                     </a>
                   </p>
                 </div>
               </li>
               <li className="flex gap-5 items-center justify-start">
                 <Mail size={32}></Mail>
-                <a target="_blank" rel="noopener noreferrer" href="mailto:devshouse.tech@gmail.com">
-                  devshouse.tech@gmail.com
+                <a target="_blank" rel="noopener noreferrer" href="//">
+                  ieeecs@raisoni.net
                 </a>
               </li>
               <li className="flex gap-5 items-center justify-start">
@@ -120,9 +120,9 @@ const Contact = () => {
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://www.google.com/maps/place/Vellore+Institute+of+Technology+Chennai+Campus+(VIT+Chennai)/@12.840641,80.1508534,17z/data=!3m1!4b1!4m6!3m5!1s0x3a5259af8e491f67:0x944b42131b757d2d!8m2!3d12.840641!4d80.1534283!16s%2Fg%2F11gdxsbhgz?entry=tts"
+                  href="https://maps.app.goo.gl/64uUET3Sqc796YZi9"
                 >
-                  VIT, Chennai
+                  IEEE, GHRCE
                 </a>
               </li>
             </ul>

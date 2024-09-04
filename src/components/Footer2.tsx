@@ -11,6 +11,7 @@ import {
 } from "@tabler/icons-react";
 import { IconBrandGithubFilled } from "@tabler/icons-react";
 import Link from "next/link";
+import { ColorInput } from "@mantine/core";
 
 export default function Footer2() {
   return (
@@ -105,7 +106,7 @@ export default function Footer2() {
         </div>
         <div className="flex flex-col">
           <p className="text-lg">© 2024 {" "}
-          <Link className="underline" href={'https://gdscvitc.eu.org/'}>GDSC VIT Chennai</Link>. All rights reserved.</p>
+          <Link className="underline" href={'//'}>IEEE GHRCE</Link>. All rights reserved.</p>
         </div>
       </div>
     </div>
