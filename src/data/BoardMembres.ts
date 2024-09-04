@@ -14,7 +14,7 @@ const boardMembers = [
     description: "It's not what happens to you, but how you react to it that matters",
     github: "//",
     linkedIn: "http://www.linkedin.com/in/laabhansh-jaiswal-721506285",
-    type: "organizer",
+    type: "chair",
   },
   {
     name: "Sarang Chafekar",

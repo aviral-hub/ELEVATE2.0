@@ -53,11 +53,11 @@ const Navbar = () => {
             About
           </a>
         </li>
-        <li className="mx-4 my-6 md:my-0">
+        {/* <li className="mx-4 my-6 md:my-0">
           <a href="#tracks" className="text-white hover-underline-animation">
             Tracks
           </a>
-        </li>
+        </li> */}
         <li className="mx-4 my-6 md:my-0">
           <a href="#prizes" className="text-white hover-underline-animation">
             Prizes
@@ -73,7 +73,7 @@ const Navbar = () => {
             Team
           </a>
         </li>
-        <li className="mx-4 my-6 md:my-0">
+        {/* <li className="mx-4 my-6 md:my-0">
           <a href="#sponsor" className="text-white hover-underline-animation">
             Sponsors
           </a>
@@ -82,7 +82,7 @@ const Navbar = () => {
           <a href="#faqs" className="text-white hover-underline-animation">
             FAQs
           </a>
-        </li>
+        </li> */}
         <li className="mx-4 my-6 md:my-0">
           <a href="#contact" className="text-white hover-underline-animation">
             Contact

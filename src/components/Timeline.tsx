@@ -31,8 +31,8 @@ const Timeline = () => {
       </h1>
       <EmblaCarousel slides={[
         "/timeline/full_timeline.png",
-        // "/timeline/timeline2.png",
-        // "/timeline/timeline3.png",
+        "/timeline/timeline2.png",
+        "/timeline/timeline3.png",
       ]} options={OPTIONS} />
 
     </section>

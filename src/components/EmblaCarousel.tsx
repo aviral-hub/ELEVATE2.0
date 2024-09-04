@@ -35,14 +35,12 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
             <div className="embla__slide">
-                <Image src={"/timeline/full_timeline1.png"} className='w-full ' alt=""  width={800} height={450} />
+                <Image src={"/timeline/Inaugural Ceremony.png"} className='w-full ' alt=""  width={800} height={450} />
             </div>
             <div className="embla__slide">
                 <Image src={"/timeline/full_timeline2.png"} className='w-full' alt=""  width={800} height={450} />
             </div>
-            <div className="embla__slide">
-                <Image src={"/timeline/full_timeline3.png"} className='w-full' alt=""  width={800} height={450} />
-            </div>
+            
         </div>
       </div>
 

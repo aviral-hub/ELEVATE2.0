@@ -32,9 +32,11 @@ export default function RootLayout({
         <meta name="theme-color" content="#000000" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="DevsHouse" />
-        <meta property="og:description" content="A community of developers" />
+        <meta property="og:title" content="ELEVATE 2.0" />
+        <title>ELEVATE 2.0</title>
+        <meta property="og:description" content="Dil sa Elevate" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="../../public/Ignite your potential unleash your success.png" />
         <meta property="og:url" content="https://www.devshouse.tech" />
 
         <ColorSchemeScript />
