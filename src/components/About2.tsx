@@ -9,7 +9,7 @@ export default function About2() {
       <div className="flex flex-row font-bold">
         <p className="text-8xl md:text-9xl mr-2">A</p>
         <div className="flex flex-col justify-end pb-1 md:pb-3">
-          <p className="text-2xl md:text-4xl">bout IEEE CS's</p>
+          <p className="text-2xl md:text-4xl">About IEEE CS</p>
           <p className="text-2xl md:text-4xl">Elevate 2.0</p>
         </div>
       </div>
