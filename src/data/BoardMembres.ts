@@ -14,7 +14,7 @@ const boardMembers = [
     description: "It's not what happens to you, but how you react to it that matters",
     github: "//",
     linkedIn: "http://www.linkedin.com/in/laabhansh-jaiswal-721506285",
-    type: "chair",
+    type: "organizer",
   },
   {
     name: "Sarang Chafekar",
@@ -34,15 +34,7 @@ const boardMembers = [
     linkedIn: "https://www.linkedin.com/in/prashant-kamale-218647242/",
     type: "organizer",
   },
-  {
-    name: "Aditi Sarode",
-    image: "/Leads/aditi_sarode.jpeg",
-    role: "vice_chair",
-    description: "One track mind, one track heart",
-    github: "/",
-    linkedIn: "https://www.linkedin.com/in/aditi-sarode-a9a80b229/",
-    type: "organizer",
-  },
+ 
   {
     name: "Saniya Shekokar",
     image: "/Leads/SaniyaShekokar.jpg",
@@ -61,15 +53,7 @@ const boardMembers = [
     linkedIn: "https://www.linkedin.com/in/rutuj-langde-a79821258/",
     type: "technical",
   },
-  {
-    name: "Pravin sahu",
-    image: "/Leads/PravinSahu.jpg",
-    role: "Web Dev Lead",
-    description: "Turning caffeine and curiosity into coding masterpieces",
-    github: "//",
-    linkedIn: "https://www.linkedin.com/in/pravin-sahu-634b80204?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    type: "technical",
-  },
+ 
   {
     name: "Umar Saghir",
     image: "/Leads/Umarmasood.jpeg",
@@ -95,7 +79,7 @@ const boardMembers = [
     description: "Placeholder",
     github: "//",
     linkedIn: "https://www.linkedin.com/in/gunjan-thakkar-669545244//",
-    type: "organizer",
+    type: "treasurer",
   },
   {
     name: "Shreyash Sakhare",
@@ -149,7 +133,7 @@ const boardMembers = [
     description: "Placeholder",
     github: "",
     linkedIn: "https://www.linkedin.com/in/anshul-mankar-3b7127274/",
-    type: "organizer",
+    type: "treasurer",
   },
   {
     name: "Vaibhavi Mangrulkar",

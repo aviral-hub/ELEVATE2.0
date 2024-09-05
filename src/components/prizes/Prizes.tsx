@@ -199,12 +199,12 @@ export default function Prizes() {
           />
         </div> */}
         <div className="max-w-96">
-          <Image
+          {/* <Image
             src={bestfresher}
             width={702}
             height={445}
             alt="Fresher best team"
-          />
+          /> */}
         </div>
       </div>
 
