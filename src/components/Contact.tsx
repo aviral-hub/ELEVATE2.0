@@ -60,7 +60,6 @@ const Contact = () => {
       toast({
         title: "Success",
         description: "Message sent successfully!",
-        status: "success", // You can customize the appearance using this status (e.g., 'success', 'error', etc.)
       });
 
       form.reset(); // Reset the form after successful submission
@@ -71,7 +70,6 @@ const Contact = () => {
       toast({
         title: "Error",
         description: "An error occurred while sending your message.",
-        status: "error", // Customize the appearance with this status
       });
     }
   };
